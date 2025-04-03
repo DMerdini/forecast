@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather in Tirana, Albania</title>
+    <link rel="stylesheet" href="css/weather.css" />
+  </head>
+  <body>
+    <header>
+      <div class="innerheader">
+        <div class="round"></div>
+        <div class="round2"></div>
+        <div class="round3"></div>
+        <div class="waethercard">
+          <h2><span id="ip"></span></h2>
+          <div class="weathercardframe">
+            <img id="mainicon" src="images/weathericons/sun-cloud.gif" alt="" />
+          </div>
+          <div class="weathercardbody">
+            <div class="row">
+              <h4>
+                <div class="iconframe">
+                  <img
+                    src="images/weathericons/thermometer-simple.svg"
+                    alt=""
+                  />
+                </div>
+                <span id="temp">20</span>
+                <span>&#8451;</span>
+              </h4>
+              <h4>
+                <div class="iconframe">
+                  <img src="images/weathericons/wind.svg" alt="" />
+                </div>
+                <span id="wind">202</span>
+                <span>m/s</span>
+              </h4>
+            </div>
+            <div class="row">
+              <h4>
+                <div class="iconframe">
+                  <img src="images/weathericons/cloud.svg" alt="" />
+                </div>
+                <span id="humidity">20</span>
+                <span>&#37;</span>
+              </h4>
+              <h4>
+                <div class="iconframe">
+                  <img src="images/weathericons/cloud-rain.svg" alt="" />
+                </div>
+                <span id="rain">20</span>
+                <span>&#37;</span>
+              </h4>
+            </div>
+          </div>
+          <div id="weekweather"></div>
+        </div>
+      </div>
+    </header>
+  </body>
+  <script src="js/weather.js"></script>
+</html>

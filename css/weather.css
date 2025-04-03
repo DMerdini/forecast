@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+HU:wght@100..400&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  height: 100vh;
+}
+.innerheader {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.round,
+.round2,
+.round3 {
+  box-shadow: 3px 6px 11px 3px #33333333;
+}
+.round {
+  position: absolute;
+  top: 12%;
+  left: 39%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #f65cfc, #ee57ff);
+}
+.round2 {
+  position: absolute;
+  top: 65%;
+  left: 28%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #31ff7f, #17b754);
+}
+.round3 {
+  position: absolute;
+  top: 43%;
+  left: 60%;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #fdff4d, #fcff0f);
+}
+.innerheader * {
+  color: white;
+}
+.waethercard {
+  width: clamp(80vw, 96vw, 95vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 11px 3px #ffffff33;
+  border: 1px solid #ffffff66;
+  background: #ffffff33;
+  backdrop-filter: blur(26px);
+  border-radius: 16px;
+  padding: 25px;
+}
+.waethercard > h2 {
+  margin: 0;
+}
+.weathercardframe {
+}
+.weathercardbody {
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.weathercardbody > .row > * {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 5px;
+  font: 500 18px "Montserrat", sans-serif;
+}
+.weathercardbody > h4 > span:nth-child(2) {
+  width: 37px;
+  text-align: end;
+}
+
+#weekweather {
+  display: flex;
+  box-sizing: border-box;
+  padding: 5px;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.weekweathercard {
+  width: clamp(130px, 20%, 150px);
+  border: 1px solid #ffffff66;
+  display: flex;
+  background: #00000025;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(62px);
+  border-radius: 6px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+.weekweathercard > * {
+  margin: 4px;
+}
+.weekweatherframe {
+  width: 45px;
+  height: 45px;
+}
+.weekweatherframe > img {
+  width: 100%;
+}
+.weekweathertemp > H4 {
+  display: flex;
+  align-items: center;
+  margin: 4px;
+}
+
+.weekweathericontemp {
+  width: 30px;
+  height: 30px;
+}
+.weekweatherrain > H4 {
+  display: flex;
+  align-items: center;
+  margin: 4px;
+}
+.weekweathericonrain {
+  width: 30px;
+  height: 30px;
+}
+.weekweathericontemp > svg,
+.weekweathericonrain > svg {
+  fill: white;
+}
+@media screen and (width<800px) {
+  #weekweather {
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+  }
+}
+@media screen and (width<500px) {
+  #weekweather {
+    /* flex-direction: column; */
+  }
+}
